@@ -1,0 +1,54 @@
+/* body{
+    background: rgb(104, 103, 103);
+} */
+
+h1{
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
+
+h2{
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
+.menu{
+    text-align: end;
+    padding-left: 50px;
+}
+
+.button{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: medium;
+    color: white;
+    box-shadow: 3px 6px 9px black;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+table{
+    background-color: lightblue;
+}
+
+.table_border{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form_border{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 250px;
+}

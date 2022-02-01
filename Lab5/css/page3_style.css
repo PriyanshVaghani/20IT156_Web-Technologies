@@ -1,0 +1,31 @@
+.logo{
+    background-color: lightgray;
+    font-size: 50px;
+}
+
+.sidebar{
+    text-align: center;
+    margin-top: 10px;
+    width: 29%;
+    padding-top: 256px;
+    padding-bottom: 256px;
+    font-size: 25px;
+}
+
+.bodyarea{
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: right;
+    width: 70%;
+    font-size: 25px;
+}
+
+footer{
+    background-color: lightgray;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}

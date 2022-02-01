@@ -1,0 +1,36 @@
+.logo{
+    box-sizing: border-box;
+    float: left;
+    background-color: lightgray;
+    width: 50%;
+    padding-left: 30px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.box{
+    background-color: lightgray;
+    display: inline-block;
+    width: 24.1%;
+    height: 100px;
+    margin: 5px;
+}
+
+.threebox{
+    background-color: lightgray;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    width: 33.1%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: lightgray;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}

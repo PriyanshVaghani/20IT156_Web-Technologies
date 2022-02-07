@@ -1,0 +1,124 @@
+@media only screen and (max-width: 600px) {
+    .navigation{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .parent{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 50vw;
+    }
+    .navigation{
+        width: 50vw;
+        font-size: 1.5rem;
+    }
+    .fourbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .twobox{
+        display: flex;
+        justify-content: space-between;
+    }
+    .box{
+        width: 47vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .parent{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 50vw;
+    }
+    .navigation{
+        width: 50vw;
+        font-size: 1.5rem;
+    }
+    .fourbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .twobox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 48vw;
+    }
+    .box{
+        width: 23vw;
+    }
+}
+
+.logo{
+    background-color: lightgrey;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.navigation{
+    background-color: lightgrey;
+    margin-bottom: 10px;
+}
+
+.box{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5vh 0;
+}
+
+.parentbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sidebar{
+    background-color: lightgray;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    width: 25vw;
+    padding: 30vh 0;
+}
+
+.childbox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 100%;
+}
+
+header{
+    background-color: lightgray;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 5vh 0;
+}
+
+.bodyarea{
+    background-color: lightgray;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 25vh 0;
+}
+
+footer{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;  
+}

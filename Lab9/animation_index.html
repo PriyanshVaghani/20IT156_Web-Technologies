@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156</title>
+    <style>
+        @keyframes example {
+            0% {
+                left: 0px;
+                transform: rotate(0deg);
+            }
+
+            10% {
+                transform: rotate(-5deg);
+            }
+
+            20% {
+                transform: rotate(5deg);
+            }
+
+            30% {
+                transform: rotate(-5deg);
+            }
+
+            40% {
+                transform: rotate(5deg);
+            }
+
+            50% {
+                transform: rotate(-4deg);
+            }
+
+            60% {
+                transform: rotate(4deg);
+            }
+
+            70% {
+                transform: rotate(-5deg);
+            }
+
+            80% {
+                transform: rotate(4deg);
+            }
+
+            90% {
+                transform: rotate(-5deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+                left: 100%;
+            }
+        }
+
+        img {
+            width: 40vw;
+            position: absolute;
+            margin-top: 50vh;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-image: url(./beach.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./boat.png" alt="boat">
+</body>
+
+</html>

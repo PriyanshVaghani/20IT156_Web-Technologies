@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx Object</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div>String is <b>'Is this all there is? or 12345 6789' </b></div>
+    <div id="find"></div>
+    <div id="notfind"></div>
+    <div id="digit"></div>
+    <div id="notdigit"></div>
+    <div id="name"></div>
+    <div id="any"></div>
+    <div id="first"></div>
+    <div id="last"></div>
+    <div id="one"></div>
+    <div id="more"></div>
+    <div id="zerone"></div>
+
+    <script>
+        let text = "Is this all there is? or 12345 6789";
+
+        document.getElementById("find").innerHTML = "<br>After match this String with Regex (/[h]/g) = <b>" + text.match(/[h]/g) + "</b>";
+        document.getElementById("notfind").innerHTML = "<br>After match this String with Regex (/[^h]/g) = <b>" + text.match(/[^h]/g) + "</b>";
+        document.getElementById("digit").innerHTML = "<br>After match this String with Regex (/[h]/g) = <b>" + text.match(/[4-5]/g) + "</b>";
+        document.getElementById("notdigit").innerHTML = "<br>After match this String with Regex (/[h]/g) = <b>" + text.match(/[^4-5]/g) + "</b>";
+        document.getElementById("name").innerHTML = "<br>Check string 'Priyansh' is matchwith Regex (/^[P]{4,}/) : <b>" + (/^[P]{4,}/).test('Priyansh') + "</b>";
+        document.getElementById("any").innerHTML = "<br>Is there any character in ' '(Using . operator) : <b>" + (/^.$/).test(' ') + "</b>";
+        document.getElementById("first").innerHTML = "<br>First character is 'ABC' in 'ABCDEFGHI' : <b>" + (/^ABc/).test('ABCDEFGH') + "</b>";
+        document.getElementById("last").innerHTML = "<br>Last character is 'Ghi' in 'ABCDEFGhi' : <b>" + (/Ghi$/).test('ABCDEFGhi') + "</b>";
+        document.getElementById("one").innerHTML = "<br>Matches string that contains at least one P in 'PPPPPP' : <b>" + (/P+/).test('PPPPPP') + "</b>";
+        document.getElementById("more").innerHTML = "<br>Matches string that contains zero or more occurrences of P in 'WT' : <b>" + (/P*/).test('WT') + "</b>";
+        document.getElementById("zerone").innerHTML = "<br>Matches string that contains zero or one occurrences of P in 'Priyansh' : <b>" + (/P?/).test('Priyansh') + "</b>";
+    </script>
+</body>
+
+</html>

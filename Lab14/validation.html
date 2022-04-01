@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/validation_style.css">
+    <title>Validation</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div class="valid">
+        <form action="#" onsubmit="return formvalidation()">
+            <div class="email">
+                <input type="email" name="email" id="email_id" placeholder="Email">
+            </div>
+            <div class="email_error" id="email_errorid"> 
+                Please Enter Your email 
+            </div>
+            <div class="email_error" id="email_lenid"> 
+                Please Enter Valid email 
+            </div>
+            <div class="mobile">
+                <input type="text" name="mobile" id="mobile_id" placeholder="Mobile number">
+            </div>
+            <div class="mobile_error" id="mobile_errorid"> 
+                Please Enter Your Mobile Number
+            </div>
+            <div class="mobile_error" id="mobile_lenid"> 
+                Please Enter Valid Mobile Number
+            </div>
+            <div class="credit">
+                <input type="text" id="credit_id" placeholder="Credit Card Number">
+            </div>
+            <div class="credit_error" id="credit_errorid">
+                Please Enter Your Credit Card Number
+            </div>
+            <div class="credit_error" id="credit_lenid">
+                Please Enter Valid Credit Card Number
+            </div>
+            <div class="zipcode">
+                <input type="text" id="zip" placeholder="Zipcode">
+            </div>
+            <div class="zip_error" id="zip_errorid">
+                Please Enter Zip Code
+            </div>
+            <div class="zip_error" id="zip_lenid">
+                Please Enter Valid Zip Code
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="./js/validation_script.js"></script>
+</body>
+
+</html>

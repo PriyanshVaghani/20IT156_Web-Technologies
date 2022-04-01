@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Pattern</title>
+    <style>
+        .word {
+            border: 2px solid black;
+            border-radius: 25px;
+            width: 400px;
+            margin: 30vh auto;
+            text-align: center;
+        }
+        .error{
+            font-size: 1.25rem;
+            padding: 0 20px;
+        }
+        input[type=text] {
+            font-size: 1.25rem;
+            padding: 5px 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        input[type=submit] {
+            font-size: 1.25rem;
+            padding: 5px 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div class="word">
+        <form action="#" onsubmit="return wordvalidation()">
+            <div class="wordinput">
+                <input type="text" id="word_id" placeholder="Enter Any Word">
+            </div>
+            <div class="error" id="id" style="color: red;"></div>
+            <div class="button">
+                <input type="submit" value="Check">
+            </div>
+        </form>
+    </div>
+    <script>
+        function wordvalidation() {
+            const word = document.getElementById('word_id').value;
+            let flag = true;
+
+            if (word == '') {
+                document.getElementById('id').innerHTML = "Please Enter any Word";
+                document.getElementById('id').style.color='red';
+                flag = false;
+            }
+            else if ((/^[M].[d][a-z A-z 0-9 !@#$%^&*(){}<>]*[y]$/).test(word)) {
+                document.getElementById('id').innerHTML = "Word is Start with 'M' and the third character is 'd' and Last Character is ' y '";
+                document.getElementById('id').style.color='black';
+            }
+            else if (!(/^[M]/).test(word)) {
+                document.getElementById('id').innerHTML = "Word must Start with 'M'";
+                document.getElementById('id').style.color='red';
+                flag = false;
+            }
+            else if (!(/^..[d]/).test(word)) {
+                document.getElementById('id').innerHTML = "Word's third character is 'd'";
+                document.getElementById('id').style.color='red';
+                flag = false;
+            }
+            else if (!(/[y]$/).test(word)) {
+                document.getElementById('id').innerHTML = "Word's Last Character is ' y '";
+                document.getElementById('id').style.color='red';
+                flag = false;
+            }
+            else {
+                document.getElementById('id').innerHTML = "Enter word is not Start with 'M' and the third character is 'd' and Last Character is ' y '";
+                document.getElementById('id').style.color='red';
+                flag = false;
+            }
+
+            return flag;
+        }
+    </script>
+</body>
+
+</html>

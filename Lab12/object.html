@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156 Object</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div id="id"></div>
+    <div id="stuname"></div>
+    <div id="branch"></div>
+    <div id="year"></div>
+    <div id="sgpacgpa"></div>
+    <script>
+        const student = {
+            studentName: 'Priyansh',
+            surname: 'Vaghani',
+            idnumber: '20IT156',
+            Branch: 'IT',
+            Collage: 'CSPIT',
+            Year: 2,
+            SGPA: 9.23,
+            CGPA: 9.42,
+
+            name: function () {
+                return this.studentName + " " + this.surname;
+            },
+            collage_branch: function () {
+                return this.Collage + "-" + this.Branch;
+            }
+        }
+        document.getElementById('id').innerHTML = 'Student ID : <b>' + student.idnumber + '</b>';
+        document.getElementById('stuname').innerHTML = '<br>Student Name : <b> ' + student.name() + '</b>';
+        document.getElementById('branch').innerHTML ='<br>Branch : <b>' +student.collage_branch() + '</b>';
+        document.getElementById('year').innerHTML ='<br>Year : <b>' +student.Year + 'nd year</b>';
+        document.getElementById('sgpacgpa').innerHTML = '<br>SGPA : <b>' + student.SGPA + '</b> CGPA : <b> ' + student.CGPA + '</b>';
+    </script>
+</body>
+
+</html>

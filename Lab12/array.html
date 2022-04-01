@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156 Array</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div id="display"></div>
+    <div id="element"></div>
+    <div id="length"></div>
+    <div id="sort"></div>
+    <div id="join"></div>
+    <div id="pop"></div>
+    <div id="push"></div>
+    <div id="shift"></div>
+    <div id="unshift"></div>
+    <div id="splice"></div>
+    <div id="slice"></div>
+    <div id="reverse"></div>
+    <div id="delete"></div>
+    <script>
+        const color = ['Red', 'Yellow', 'Blue', 'Green', 'Black', 'Pink'];
+        document.getElementById('display').innerHTML = 'All element of Arrray is <b> ' + color + '</b>';
+        document.getElementById('element').innerHTML = '<br>3rd element of Arrray is <b> ' + color[3] + '</b>';
+        document.getElementById('length').innerHTML = '<br>length of Arrray is <b> ' + color.length + '</b>';
+        color.sort();
+        document.getElementById('sort').innerHTML = '<br>After sorting element of Arrray is <b> ' + color + '</b>';
+        document.getElementById('join').innerHTML = '<br>After Join all element of Arrray through \' - \' is <b> ' + color.join(' - ') + '</b>';
+        color.pop();
+        document.getElementById('pop').innerHTML = '<br>Affter pop element , Arrray is <b> ' + color + '</b>';
+        color.push('Orange')
+        document.getElementById('push').innerHTML = '<br>Affter push element Orange, Arrray is <b> ' + color + '</b>';
+        color.shift();
+        document.getElementById('shift').innerHTML = '<br>Affter Shift element, Arrray is <b> ' + color + '</b>';
+        color.unshift('White');
+        document.getElementById('unshift').innerHTML = '<br>Affter Unhift element White, Arrray is <b> ' + color + '</b>';
+        color.splice(4, 1, 'purple', 'brown');
+        document.getElementById('splice').innerHTML = '<br>Affter splice 2 element at position 1 & 4, Arrray is <b> ' + color + '</b>';
+        document.getElementById('slice').innerHTML = '<br>Affter slice from 1 to 5, Arrray is <b> ' + color.slice(1, 5); + '</b>';
+        document.getElementById('reverse').innerHTML = '<br>After reverse, Array is <b> ' + color.reverse() + '</b>';
+        delete color[2];
+        document.getElementById('delete').innerHTML = '<br>Affter delete 3rd element, Arrray is <b> ' + color + '</b>';
+    </script>
+</body>
+
+</html>

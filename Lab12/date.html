@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156 Date</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div id="date"></div>
+    <div id="bod"></div>
+    <h3>
+        Different method of date
+    </h3>
+    <div id="diffmethod"></div>
+    <div id="gettime"></div>
+    <div id="getFullYear"></div>
+    <div id="getMonth"></div>
+    <div id="getHours"></div>
+    <script>
+        const d = new Date();
+        const bod = new Date(2020, 4, 14, 11, 59, 59, 59)//Date(year, month, day, hours, minutes, seconds, milliseconds)
+        document.getElementById('date').innerHTML = 'Today\' date is <b>' + d + '</b>';
+        document.getElementById('bod').innerHTML = 'BOD is <b>' + bod + '</b>';
+        document.getElementById('diffmethod').innerHTML = 'Date(2018, 11, 24, 10, 33, 30) = <b>' + new Date(2018, 11, 24, 10, 33, 30) + '</b><br>  Date("2012-03-14") = <b>' + new Date("2012-03-14") + '</b><br> Date("2015-03") = <b>' + new Date("2015-03") + '</b><br> Date("2015") = <b>' + new Date("2015") + '</b>';
+        document.getElementById('gettime').innerHTML = '<br>getTime() = <b>' + d.getTime() + '</b>';
+        document.getElementById('getFullYear').innerHTML = '<br>getFullYear() = <b>' + d.getFullYear() + '</b>';
+        document.getElementById('getMonth').innerHTML = '<br>getMonth() = <b>' + d.getMonth() + '</b>';
+        document.getElementById('getHours').innerHTML = '<br>getHours() = <b>' + d.getHours() + '</b>';
+    </script>
+</body>
+
+</html>

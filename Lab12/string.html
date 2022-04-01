@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156 String</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div id="string"></div>
+    <div id="length"></div>
+    <div id="slice"></div>
+    <div id="substring"></div>
+    <div id="substr"></div>
+    <div id="lower"></div>
+    <div id="upper"></div>
+    <div id="index"></div>
+    <div id="search"></div>
+    <div id="endwith"></div>
+    <div id="startsWith"></div>
+    <script>
+        let str = 'ABCDEFGHIJKLMnopqrstuvwxyz';
+        document.getElementById('string').innerHTML = 'String is <b>' + str + '</b>';
+        document.getElementById('length').innerHTML = '<br>Length of String is <b>' + str.length + '</b>';
+        document.getElementById('slice').innerHTML = '<br>Slice of String is <b>' + str.slice(7, 10) + '</b>'; 
+        document.getElementById('substring').innerHTML = '<br>Substring of String is <b>' + str.substring(12, 18); + '</b>'; 
+        document.getElementById('substr').innerHTML = '<br>Substr of String is <b>' + str.substr(12, 18); + '</b>'; 
+        document.getElementById('lower').innerHTML= '<br>toLowercase <b>'+ str.toLowerCase() + '</b>';
+        document.getElementById('upper').innerHTML = '<br>toUpperCase <b>' + str.toUpperCase() + '</b>';
+        document.getElementById('index').innerHTML = '<br>Index of p is <b>' + str.indexOf("p") + '</b>';
+        document.getElementById('search').innerHTML = '<br>Search H : <b>' + str.search('H') + '</b>';
+        document.getElementById('endwith').innerHTML = '<br>End with A : <b>' + str.endsWith('A') + '</b>';
+        document.getElementById('startsWith').innerHTML = '<br>Start with A : <b>' + str.startsWith('A') + '</b>';
+    </script>
+</body>
+
+</html>

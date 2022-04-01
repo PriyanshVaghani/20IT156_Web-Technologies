@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156 Math</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <div id="euler"></div>
+    <div id="pi"></div>
+    <div id="sqrt2"></div>
+    <div id="sqrt1_2"></div>
+    <div id="ln2"></div>
+    <div id="ln10"></div>
+    <div id="log2e"></div>
+    <div id="log10e"></div>
+
+    <h3>Math.round()</h3>
+    <div id="round"></div>
+    <h3>Math.ceil()</h3>
+    <div id="ceil"></div>
+    <h3>Math.floor()</h3>
+    <div id="floor"></div>
+    <h3>Math.trunc()</h3>
+    <div id="trunc"></div>
+    <h3>Math.sign()</h3>
+    <div id="sign"></div>
+
+    <script>
+        document.getElementById('euler').innerHTML = 'Euler\'s number is <b> ' + Math.E + '</b>';
+        document.getElementById('pi').innerHTML = '<br> PI = <b> ' + Math.PI + '</b>';
+        document.getElementById('sqrt2').innerHTML = '<br> the square root of 2 is <b> ' + Math.SQRT2 + '</b>';
+        document.getElementById('sqrt1_2').innerHTML = '<br> the square root of 1/2 is <b> ' + Math.SQRT1_2 + '</b>';
+        document.getElementById('ln2').innerHTML = '<br> the natural logarithm of 2 is <b> ' + Math.LN2 + '</b>';
+        document.getElementById('ln10').innerHTML = '<br> the natural logarithm of 10 is <b>' + Math.LN10 + '</b>';
+        document.getElementById('log2e').innerHTML = '<br> base 2 logarithm of E is <b>' + Math.LOG2E + '</b>';
+        document.getElementById('log10e').innerHTML = '<br> base 10 logarithm of E is <b>' + Math.LOG2E + '</b>';
+        document.getElementById('round').innerHTML = 'After rounded 5.4 = <b>' + Math.round(5.4) + '</b><br> After rounded 5.5 = <b>' + Math.round(5.5) + '</b><br> After rounded 5.6 = <b>' + Math.round(5.6) + '</b>';
+        document.getElementById('ceil').innerHTML = 'After ceil 5.4 = <b>' + Math.ceil(5.4) + '</b><br> After rounded -5.4 = <b>' + Math.ceil(-5.4) + '</b>';
+        document.getElementById('floor').innerHTML = 'After floor 5.5 = <b>' + Math.floor(5.5) + '</b><br> After floor -5.5 = <b>' + Math.floor(-5.5) + '</b>';
+        document.getElementById('trunc').innerHTML = 'After trunc 5.6 = <b>' + Math.trunc(5.6) + '</b><br> After trunc -5.6 = <b>' + Math.trunc(-5.6) + '</b>';
+        document.getElementById('sign').innerHTML = 'Sign of 5 is <b>' + Math.sign(5) + '</b><br> Sign of 0 is <b>' + Math.sign(0) + '</b><br> Sign of -5 is <b>' + Math.sign(-5) + '</b>';
+
+    </script>
+</body>
+
+</html>

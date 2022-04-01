@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20IT156 Number</title>
+</head>
+
+<body>
+    <h3 style="text-align: end;">20IT156 Priyansh Vaghani</h3>
+    <p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+    <div id="demo"></div>
+
+    <div id="value"></div>
+    <div id="arithmatic"></div>
+
+    <h3>The toExponential() Method</h3>
+    <div id="toExponential"></div>
+
+    <h3>The toFixed() Method</h3>
+    <div id="toFixed"></div>
+
+    <h3>The toPrecision() Method</h3>
+    <div id="toPrecision"></div>
+
+    <div id="minvalue"></div>
+    <div id="maxvalue"></div>
+
+    <script>
+        let x = 999999999999999;
+        let y = 9999999999999999;
+        document.getElementById("demo").innerHTML = 'If x = 999999999999999 then it take x = <b>' + x + "</b><br> If y = 9999999999999999 then it take y = <b>" + y + '</b>';
+        document.getElementById("value").innerHTML = '<br>(0.2 * 10 + 0.1 * 10) / 10 = <b>' + (0.2 * 10 + 0.1 * 10) / 10 + '</b>';
+
+        x = "100";
+        y = "10";
+        document.getElementById("arithmatic").innerHTML = '<br> x = <b>' + x + '</b> & y = <b>' + y + '</b>(Here data type of x and y is str)<br> x + y = <b>' + (x + y) + '</b><br> x - y = <b>' + (x - y) + '</b><br> x * y = <b>' + (x * y) + '</b><br> x / y = <b>' + (x / y) + '</b>';
+
+        let n = 3.874;
+        document.getElementById("toExponential").innerHTML = 'n = ' + n + '<br> Default Exponential = <b>' + n.toExponential() + '</b><br> Exponential up to 2 place = <b>' + n.toExponential(2) + '</b><br> Exponential up to 5 place = <b>' + n.toExponential(5) + '</b>';
+        document.getElementById("toFixed").innerHTML = 'n = ' + n + '<br> Default Fixed = <b>' + n.toFixed() + '</b><br> Fixed up to 2 place = <b>' + n.toFixed(2) + '</b><br> Fixed up to 5 place = <b>' + n.toFixed(5) + '</b>';
+        document.getElementById("toPrecision").innerHTML = 'n = ' + n + '<br> Default Precision = <b>' + n.toPrecision() + '</b><br> Precision up to 2 place = <b>' + n.toPrecision(2) + '</b><br> Precision up to 5 place = <b>' + n.toPrecision(5) + '</b>';
+        document.getElementById('minvalue').innerHTML = '<br>Min value in javascript = <b>' + Number.MIN_VALUE + '</b>';
+        document.getElementById('maxvalue').innerHTML = 'Max value in javascript = <b>' + Number.MAX_VALUE + '</b>';
+    </script>
+</body>
+
+</html>
+
+<!--
+String
+Date
+Object -->

@@ -1,0 +1,69 @@
+.first{
+    display: none;
+    color: red;
+}
+
+.middle{
+    display: none;
+    color: red;
+}
+
+.last{
+    display: none;
+    color: red;
+}
+
+.email{
+    display: none;
+    color: red;
+}
+
+.mobile{
+    display: none;
+    color: red;
+}
+
+.length{
+    display: none;
+    color: red;
+}
+
+.gen{
+    display: none;
+    color: red;
+}
+
+.add{
+    display: none;
+    color: red;
+}
+
+.city_error{
+    display: none;
+    color: red;
+}
+
+.state_error{
+    display: none;
+    color: red;
+}
+
+.pincode_error{
+    display: none;
+    color: red;
+}
+
+.pincode_length{
+    display: none;
+    color: red;
+}
+
+.pic{
+    display: none;
+    color: red;
+}
+
+.result{
+    display: none;
+    color: red;
+}

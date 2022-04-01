@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/loginpage_style.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="loginpage">
+        <form action="#" name="mylogin" onsubmit="return alert_input()">
+            <header>Login</header>
+            <div class="input">
+                <input type="email" name="email_txt" id="email_id" placeholder="Email">
+            </div>
+            <div class="email_error" id="email_id_error">
+                Enter Valid Email
+            </div>
+            <div class="input">
+                <input type="password" name="password_txt" id="password_id" placeholder="Password">
+            </div>
+            <div class="password_error" id="password_id_error">
+                Enter Valid Password
+            </div>
+            <div class="button">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <script src="./js/loginpage_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body{
+    background-color: darkcyan;
+}
+
+
+.loginpage{
+    border: 1px solid black;
+    width: 225px;
+    margin: 35vh auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 6px 9px black;
+}
+
+header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input{
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+input[type=email] {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.email_error{
+    display: none;
+    color: red;
+    padding: 0 20px;
+
+}
+
+.password_error{
+    display: none;
+    color: red;
+    padding: 0 20px;
+
+}
+
+.button{
+    text-align: center;
+    margin: 20px auto;
+}
+
+input[type=submit] {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: darkcyan;
+    box-shadow: 3px 6px 9px black;
+}
